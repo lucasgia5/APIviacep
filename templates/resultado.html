@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do CEP</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-resultado">
+        <h1>Resultado do CEP:</h1>
+        <p><strong>CEP:</strong> {{ dados_cep.cep }}</p>
+        <p><strong>Logradouro:</strong> {{ dados_cep.logradouro }}</p>
+        <p><strong>Bairro:</strong> {{ dados_cep.bairro }}</p>
+        <p><strong>Cidade:</strong> {{ dados_cep.localidade }}</p>
+        <p><strong>Estado:</strong> {{ dados_cep.uf }}</p>
+        <a href="/">Voltar</a>
+    </div>
+</body>
+</html>
